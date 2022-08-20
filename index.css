@@ -147,16 +147,30 @@ a {
 
 
 
-
 @media only screen and (max-width: 1000px) {
-   .project-container{
+    .email-span{
+       padding-left: 60px;
+    }
+  .email-title{
+    padding-left: 60px;
+    
+
+    
+    
+  }
+  
+  .right button{
+    transform: translateX(50px);
+}
+  
+    .project-container{
        flex-wrap: wrap;
        
    }
     .about-content{
         flex-wrap: wrap;
        margin-left: 240px;
-       t
+       
     }
 
    .text, .about-p, .table{
@@ -934,6 +948,7 @@ margin-bottom:  15px;
 .email-span{
 font-size: 44px;
 font-weight: 700;
+
 }
 .email-span:hover{
 
@@ -978,7 +993,8 @@ color: blue ;
 }
 .contact-right{
     margin-bottom: 30px;
-font-size: 50px;
+    font-size: 50px;
+    
 }
 
 .column .right{
