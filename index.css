@@ -3,9 +3,6 @@ body {
     margin: 0;
 }
 
-section {
-    background-color: white;
-}
 
 .hero {
     background-color: #1c1d25;
@@ -14,12 +11,7 @@ section {
     font-size: 40px;
 }
 
-footer {
-    background-color: black;
-    color: white;
-    text-align: center;
-    padding: 80px;
-}
+
 
 nav {
     display: flex;
@@ -57,52 +49,22 @@ p {
 .subtext {
     font-size: 15px;
     font-weight: 300;
+    position: relative;
 }
 
-.hero-area {
-    display: flex;
-    height: 100%;
-    justify-content: space-between;
-    align-items: center;
-}
 
-.hero-text {
-    margin-left: 80px;
-    margin-bottom: 200px;
-}
 
-.button {
-    width: 200px;
-    height: 55px;
-    border-radius: 30px;
-    background-color: coral;
-    text-align: center;
-    font-size: 30px;
-    font-weight: 300;
-    padding-top: 5px;
-    margin-top: 20px;
-}
 
-.button:hover {
-    background-color: #ef744b;
-}
 
-.button:active {
-    background-color: #A9A9A9;
-    color: #808080;
-}
 
-.socials {
-    padding-bottom: 200px;
-}
+
+
 
 .logo {
     height: 80px;
     margin: 30px;
 }
-.social {
-    margin: 20px;
-}
+
 
 .sub-section {
     display: flex;
@@ -130,22 +92,32 @@ p {
 }
 
 .project-card {
-    width: 300px;
-    height: 500px;
-    box-shadow: 5px 5px 20px rgb(197, 195, 195);
+    width: 400px;
+   
+    min-height: 100px;
+    box-shadow: 5px 5px 20px rgb(242, 242, 242);
     margin: 10px;
+    background-color: black;
+    color: white;
+    border-radius: 30px;
+    transition: transform 0.8s;
+    position: relative;
+   
 }
+
 
 .project-container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
+    transform: translateY(-90px);
 }
 
 
 .project-image {
     margin-top: 25px;
-    width: 250px;
-    border-radius: 125px;
+    width: 350px;
+    border-radius: 25px;
 }
 
 hr {
@@ -153,10 +125,6 @@ hr {
     margin-right: 20px;
 }
 
-.project-link {
-    text-decoration: none;
-    color: #ef744b;
-}
 
 a {
     text-decoration: none;
@@ -173,6 +141,11 @@ a {
 
 
 @media only screen and (max-width: 1000px) {
+   .project-container{
+       flex-wrap: wrap;
+   }
+   
+   
     .around{
 
 
@@ -433,36 +406,19 @@ transition: all 0.5s ease;
         color: gold;
     }
     
-    /*
-    #about-me{
-        background: rgb(0, 0, 0);
-        width: 130%px;
-        height: 800px;
-        color: white;
-      
-        
-    }
-
-    .around{
-        width: 800px;
-        height: 800px;
-    }
-
-    .contact-me{
-        width: 150%;
-    }
-
     
+   
+
+  
+    .subtext{
+        font-weight: 500;
+    }
     
     html{
         zoom: 90%;
        
     }
-    .cont{
-
-
-        width: 200%;
-    }
+    
 
     .about-title{
         text-align: center;
@@ -471,11 +427,26 @@ transition: all 0.5s ease;
     }
 
 
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     .about-title:hover{
 
         color: gold;
     }
-*/
+
 
 .about :hover{
     color: gold;
@@ -486,6 +457,7 @@ transition: all 0.5s ease;
     margin-bottom: 12px;
     text-align: center;
     color: white;
+  
 }
 
 .m-heading::before{
@@ -506,7 +478,7 @@ transition: all 0.5s ease;
     width: 65px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 40px;
+    margin-bottom: 140px;
     display: block;
     transform: translateY(1px);
 }
@@ -529,23 +501,13 @@ transition: all 0.5s ease;
 }
 
 
-.about-h1{
-color: gray;
-text-align: center;
-font-size: 80px;
-transform: translateY(20px) ;
-opacity: 0.1;
-padding-top: -20px;
-}
 
-.about-h1:hover{
-    color: rgb(254, 254, 254);
-}
 
 
 .about h5{
     font-weight: 700;
     transform: translateY(-55px);
+    
 }
 
 
@@ -601,9 +563,6 @@ color:yellowgreen
 
 }
 
-.left{
-    position: relative;
-}
 
 .about .about-content .right .table td{
     width: 500px;
@@ -636,18 +595,18 @@ padding: 10px;
 
 
 .about-h1{
-color: gray;
-text-align: center;
-font-size: 80px;
-transform: translateY(20px) ;
-opacity: 0.1;
-padding-top: -20px;
-}
-
-.about-h1:hover{
-    color: rgb(254, 254, 254);
-}
-
+    color: gray;
+    text-align: center;
+    font-size: 80px;
+    transform: translateY(-35px) ;
+    opacity: 0.1;
+    padding-top: -20px;
+    }
+    
+    .about-h1:hover{
+        color: rgb(254, 254, 254);
+    }
+    
 
 .about h5{
     font-weight: 700;
@@ -739,24 +698,291 @@ padding: 10px;
     }
 
 
-  
+  .contatiner{
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    transform: translateY(-100px);
+  }
 
     
+  
+  
+  
+  #projects{
+
+    background-color: gold;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  button{
+    margin:  0 auto;
+    background: gold;
+    color: black;
+   
+    height: 60px;
+    font-weight: 700;
+    font-size: 20px;
+    border-radius: 20px;
+cursor: pointer;
+position: relative;
+}
+
+button:hover{
+
+
+    background-color: black;
+    color: gold;
+}
+
+.pro{
+    color: black;
+    font-size: 32px;
+    margin-bottom: 12px;
+    text-align: center;
+    transform: translatey(-30px);
+   
+}
+
+
+
+.pro::before{
+
+    content: '';
+    background: rgb(0, 0, 0);
+    height: 2px;
+    width: 200px;
+    margin: 0 auto;
+    display: block;
+    transform: translateY(44px);
+}
+
+.pro::after{
+    content: '';
+    background: rgb(0, 0, 0);
+    height: 7px;
+    width: 65px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 140px;
+    display: block;
+    transform: translateY(1px);
+}
+
+.project-card:hover {
+    transform: translateY(-50px);
+}
+
+.snake{
+    height: 100%px;
+    padding-bottom: -50px;
+}
+
+.contact h1{
+    color: gray;
+    text-align: center;
+    font-size: 80px;
+    transform: translateY(30px);
+    opacity: 0.1;
+    padding-top: -20px;
+}
+
+.contact h1:hover{
+    opacity: 0.6;
+    color: gold;
+}
+
+.contact h5{
+    font-weight: 700;
+    transform: translateY(-175px);
+
+}
+
+
+.contact .title::after{
+    background: gold;
+}
+
+.contact .title::before{
+    background: gold;
+}
+
+.contact .contact-content .colum{
+    margin-top: 40px;
+width: calc(50%-50px)
+}
+
+
+
+
+
+
+.contact .contact-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    transform: translateY(-275px);
+}
+
+.h2-left{
+   width: 470px;
+    font-size: 30px;
+    margin-bottom: 50px;
+    color: rgb(255, 255, 255);
+}
+
+ input{
+   color: black;
+    margin-left: 185px;
+   
+    width: 100%;
+   padding: 10px;
+    margin: 15px 0;
+    border:  1px solid rgb(11, 9, 9);
+    border-radius: 15px;
+    font-size: 20px;
+
+
+}
+
+textarea{
+    margin-left: 185px;
+  height: 175px;
+    width: 100%;
+   padding: 10px;
+    margin: 15px 0;
+    border:  1px solid rgb(11, 9, 9);
+    border-radius: 15px;
+color: black;
+font-size: 20px;
+}
+
+.left1{
+    margin-left: 23px;
+}
+
+
+.left1 button{
+    margin:  0 auto;
+    background: gold;
+    color: black;
+   
+    height: 60px;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.left1 button:hover{
+background: rgb(0, 0, 0);
+color: gold;
+
+}
+
+.contact .contact-content .right1{
+color: white;
+
+}
+
+.contact .contact-content .right1 h2{
+
+font-size: 70px;
+margin-bottom:  15px;
+
+
+}
+
+.contact .contact-content .right1 p{
+    line-height: 1.6;
+}
+
+.contact .contact-content .right1 .items
+{
+    margin-top: 10px 0;
+}
+
+.email-span{
+font-size: 44px;
+font-weight: 700;
+}
+.email-span:hover{
+
+text-decoration: underline;
+
+}
+
+
+
+.email-title{
+    font-size: 34px;
+   
+  
+   
+}
+
+.right{
+    padding-top: -155px;
+    color: white;
+    transform: translateY(-50px);
+}
+
+.right button{
+
+border-radius: 800px;
+    height: 80px;
+margin-left: 154px;
+font-size: 30px;
+background: blue;
+color: white;
+border-color: blue;
+width: 340px;
+margin-top: 50px;
+margin-left: 0px;
+}
+
+.right button:hover{
+background: white;
+color: blue ;
+
+
+}
+.contact-right{
+    margin-bottom: 30px;
+font-size: 50px;
+}
+
+.column .right{
+    margin-bottom: 15px;
+
+}
+
+section{
+    background: rgb(0, 0, 0);
+    padding-top: 5px;
+}
+
+.contact{
+    height: 980px;
+}
+
+.pro:hover{
+
+    transform: translateY(-70px);
+    
+}
+
+.pro{
+    transition: 0.8s;
+    font-size: 30px;
+}
