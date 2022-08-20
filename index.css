@@ -172,14 +172,10 @@ a {
 
 
 @media only screen and (max-width: 1000px) {
-    .hamburger {
-        display: block;
-        border: 0;
-        background-color: transparent;
-        color: white;
-        font-size: 30px;
-        margin: 20px;
-        align-self: flex-end;
+    .around{
+
+
+        display: flex;
     }
 
     ul {
@@ -425,4 +421,13 @@ transition: all 0.5s ease;
     
     #about-me{
         background: blue;
+        
+    }
+
+    .around{
+        width: 100%;
+    }
+
+    .contact-me{
+        width: 100%;
     }
