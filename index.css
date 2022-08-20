@@ -41,7 +41,7 @@ li {
 .text-2 {
      margin-block-start: 40px;
     font-size: 190px;
-    //mfargin: 0;
+
 }
 
 h2 {
@@ -108,6 +108,7 @@ p {
     display: flex;
     justify-content: space-around;
     padding: 80px;
+    
 }
 
 .sub-section-alternative {
@@ -421,13 +422,29 @@ transition: all 0.5s ease;
     
     #about-me{
         background: blue;
+        width: 130%px;
+        height: 800px;
+      
         
     }
 
     .around{
-        width: 100%;
+        width: 800px;
+        height: 800px;
     }
 
     .contact-me{
-        width: 100%;
+        width: 150%;
+    }
+
+    
+    
+    html{
+        zoom: 90%;
+       
+    }
+    .cont{
+
+
+        width: 200%;
     }
