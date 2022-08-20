@@ -317,13 +317,13 @@ transition: all 0.5s ease;
 
 .showcase{
 
-    background-color: rgb(145, 79, 79);
-    
+    background-color: rgb(15, 34, 152);
+    color: white;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     
-    height: 900px;
+    height: 115vh;
     
     }
     
